@@ -24,4 +24,12 @@ The most convenient way to create a pull request is to change curated records in
 
 ## Creating curations
 
-Detailed and tested guidelines for creating a metadata curation will be provided here. 
+To create a new masterdata curation, run
+
+```
+colrev init --type colrev_built_in.curated_masterdata
+# add crossref
+colrev search -a "crossref:jissn=123456"
+# add further sources (like DBLP)
+
+```
